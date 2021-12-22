@@ -1,0 +1,2024 @@
+
+/* -------------------------------------------- GERAL -------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Rubik', sans-serif;
+}
+
+
+html{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+
+    width: 100vw;
+
+    height: auto;
+
+    scroll-behavior: smooth;
+
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: auto;
+
+
+    background-color: white;
+}
+
+
+
+
+
+
+
+header{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+
+    background-color: #3a7cf5;
+    z-index: 5;
+
+    padding: 0 10px 0 10px;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;    
+    border-radius: 0 0 25px 25px;
+
+}
+
+#logo-body{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20%;
+    height: 100%;
+}
+
+#logo-body a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: none;
+}
+
+#logo-body img{
+    object-fit: contain;
+    width: 80%;
+    height: 80%;
+}
+
+corpo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+
+    z-index: 1;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+
+
+    width: 100%;
+    height: auto;
+
+
+    padding: 0 4% 0 4%;
+    
+}
+
+
+
+#ver-carrinho{
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+    background-color: rgb(24, 218, 24);
+    z-index: 2;
+    position: fixed;
+    top: 90vh;
+    
+
+    width: 85%;
+    height: 7vh;
+
+    color: white;
+    font-size: 1.5rem;
+
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 2px 4px;
+
+    cursor: pointer;
+}
+
+#ver-carrinho p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+
+#ver-carrinho p:nth-child(2){
+
+    width: auto;
+    height: auto;
+    position: absolute;
+
+
+    bottom: 0;
+
+    font-size: 0.6rem;
+}
+
+
+#totalCarrinhoAtual{
+
+    height: 100%;
+    width: 100%;
+
+}
+
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1rem;
+
+    width: 50%;
+
+}
+
+#titulo-site{
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+
+}
+
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+
+
+}
+
+
+
+
+
+
+
+/* -------------------------------------------- MENU LATERAL -------------------------------------------- */
+
+
+
+#menu-abrir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20%;
+    height: 100%;
+}
+
+header #menu-abrir img{
+    object-fit: contain;
+    
+    width: 50%;
+    height: 50%;
+}
+
+
+#right-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+
+    top: 0;
+    z-index: 7;
+    
+    height: auto;
+    width: 100%;
+    display: none;
+    
+}
+
+#right-menu-body{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    padding-top: 10vh;
+
+    overflow: hidden;
+    width: 60%;
+    height: 330vh;
+    
+    background-color: #31343B;
+
+    padding: 10vh 4% 0 4%;
+
+}
+
+#right-menu-body a:nth-child(1){
+    text-align: center;
+    margin: 0;
+    
+}
+
+#right-menu-body a{
+    text-align: start;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    margin: 3vh 0 0 0;
+}
+
+
+
+#ver-carrinho-meuDireito{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    width: 100%;
+    height: 5vh;
+
+    background-color: rgb(57, 241, 57);
+
+    border-radius: 10px;
+
+}
+
+#ver-carrinho-meuDireito a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+.container-modal-menu-lateral{
+    position: fixed;
+    
+    
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+
+    height: 90vh;
+    
+
+
+    top: 10vh;
+    
+    overflow: hidden;
+
+    /* background-color:  rgb(255, 255, 255); */
+    border-radius: 20px;
+    padding: 1%;
+    z-index: 2;
+
+    padding: 8%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
+
+}
+
+
+#body-modal-menu-lateral{
+    
+    position: relative;
+    
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+
+    height: 90%;
+    
+
+    
+    overflow: hidden;
+
+    background-color:  rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 1%;
+    z-index: 2;
+
+    padding: 8%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
+}
+
+
+#top-modal{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+
+}
+#top-modal h2{
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+#top-modal img{
+    object-fit: contain;
+    width: 100%;
+    height: 30%;
+}
+
+
+
+#body-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+
+}
+
+
+#body-modal div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 50%;
+}
+
+#mapa-localização{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    border-radius: 15px;
+    width: 95%;
+    height: 90%;
+}
+
+
+
+#body-modal div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 50%;
+}
+
+
+#body-modal p{
+    margin: 1% 0 1% 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------- SLIDE -------------------------------------------- */
+
+
+#murais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10vh 0 0 0;
+    height: auto;
+
+}
+
+
+#murais #slide{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 5%;
+    height: 30vh;
+
+
+    width: 100%;
+    height: 35vh;
+}
+
+
+.your-class{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+
+    width: 100%;
+    height: 95%;
+}
+
+.your-class div{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    
+    width: 100%;
+    height: 100%;
+}
+
+#infosMurais{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+
+}
+
+#tituloMural{
+    display: flex;
+
+
+    padding: 0 1% 0 1%;
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+    background-color: #3A7CF5;
+    border-radius: 50px;
+}
+
+#PrecoMural{
+    padding: 0 1% 0 1%;
+    background-color: #3A7CF5;
+    border-radius: 50px;
+
+    font-size: 1rem;
+    font-weight: 600;
+    color: greenyellow;
+}
+
+
+.your-class div img{
+    object-fit: cover;
+
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 25px;
+}
+
+
+
+/*-------------------------------------------- MURAIS TELA PRINCIPAL --------------------------------------------*/
+
+
+#bolos-mural, #salgados-mural, #bebidas-mural{
+
+    width: 100%;
+    height: 15vh;
+    background-color: grey;
+    margin: 1% 0 1% 0;
+
+    border-radius: 10px;
+
+}
+
+
+
+#bolos-mural a, #salgados-mural a, #bebidas-mural a{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    height: 100%;
+    width: 100%;
+
+    font-size: 1.5rem;
+    font-weight: 800;
+
+}
+
+
+#bolos-mural a  p, #salgados-mural a p, #bebidas-mural a p{
+    position: absolute;
+    margin: 0 0 3% 3%;
+
+    color: white;
+    font-weight: 600;
+}
+
+
+#bolos-mural a img, #salgados-mural a img, #bebidas-mural a img{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------- TELAS DE PRODUTOS--------------------------------------------*/
+
+
+
+
+
+
+/*--------- BOLOS --------- */
+
+#bolos{
+    display: flex;
+    flex-direction: column;
+
+    align-items: left;
+    height: auto;
+    padding-top: 10vh;
+}
+
+
+#head-bolos{
+    height: 10%;
+}
+
+#body-bolos{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    height: auto;
+
+}
+
+/*--------- PIZZAS --------- */
+
+#salgados{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    height: auto;
+    width: 100%;
+
+    padding-top: 10vh;
+
+}
+
+#body-salgados{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    display: flex;
+
+    height: auto;
+
+}
+
+/*--------- BEBIDAS --------- */
+
+#bebidas{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
+    height: auto;
+    width: 100%;
+
+    padding-top: 10vh;
+}
+
+#body-bebidas{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    height: auto;
+
+    padding-bottom: 20vh;
+
+}
+
+
+
+
+
+/* -------------------------------------------- (CARD PRODUTO - CARD DE PRODUTOS - APLICA A TODOS CARDS-PRODUTOS )-------------------------------------------- */
+
+.card-produto{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+
+    width: 100%;
+    height: 15vh;
+
+    margin: 5% 0 5% 0;
+
+    cursor: pointer;
+}
+
+
+.card-produto-body {
+    display: flex;
+    flex-direction: row;
+
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+#descricoesProduto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    
+}
+
+#imageProduto{
+    width: 35%;
+    height: 100%;
+}
+
+#itemTitulo{
+    text-align: start;
+    font-size: 1rem;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    height: 20%;
+    font-weight: 500;
+    width: 100%;
+
+}
+
+
+ #itemDescricao{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    
+    width: 100%;
+    height: 60%;
+    font-size: 0.8rem;
+    font-weight: 100;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    text-align: start;
+    
+}
+
+
+
+#itemPreco{
+    width: 100%;
+    text-align: start;
+    
+    font-size: 1rem;
+    font-weight: bolder;
+    height: 20%;
+
+    color: rgb(16, 151, 16);
+}
+
+
+
+
+
+
+
+#itemIcone{
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+
+    border-radius: 8px;
+
+}
+
+
+
+/* -------------------------------------------- MODAL -------------------------------------------- */
+
+
+#modal-container{
+    position: fixed;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 352px;
+
+    height: 85vh;
+    
+    top: 10vh;
+
+    display: none;
+    overflow: hidden;
+
+
+
+    padding: 1%;
+    z-index: 2;
+
+}
+
+
+#modal-container-body {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    border-radius: 20px;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: white;
+    padding: 10%;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
+}
+
+
+
+
+#fecharModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 8%;
+    height: 4%;
+}
+
+#fecharModal-body{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+#modalImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    object-fit: contain;
+
+}
+
+#modalImageBody{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+
+    border: 1px solid rgb(141, 141, 141)
+}
+
+#corpoModaCarrinho{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    width: 100%;
+    height: 50%;
+
+}
+
+#modalBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+#modalTitulo{
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 1%;
+
+}
+
+#modalDescricao{
+    margin-top: 1%;
+
+    font-size: 0.7rem;
+    font-weight: 300; 
+
+    width: 100%;
+
+    height: auto;
+
+
+}
+
+#modalPreco{
+    display: flex;
+    margin-top: 2%;
+
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+
+    color: rgb(24, 218, 24);
+    height: auto;
+
+}
+
+
+
+#adicionais{
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    margin: 1% 0 1% 0;
+    width: 100%;
+    height: 40%;
+    overflow-y: auto;
+}
+
+#adicionaisBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 95%;
+    height: 100%;
+}
+
+#opadiconais{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+
+}
+
+
+#botaoAddCarrinho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 10%;
+
+}
+
+
+
+#adicionarCarrinho{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    background-color: rgb(24, 218, 24);
+    
+
+    width: 90%;
+
+    color: white;
+    font-size: 0.8rem;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    height: 100%;
+}
+
+#adicionarCarrinho p{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+
+
+#subtotal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#quantidadeItem{
+    text-align: center;
+    border-radius: 20px;
+    height: 100%;
+    width: 40%;
+}
+
+
+
+/* -------------------------------------------- VER CARRINHO -------------------------------------------- */
+#ver-carrinho-container{
+    position: fixed;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 352px;
+
+    height: 85vh;
+    
+    top: 11vh;
+
+    display: none;
+
+    padding: 1%;
+    z-index: 2;
+
+
+    
+    overflow-y: auto;
+
+}
+
+#ver-carrinho-body{
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+
+    border-radius: 20px;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 7%;
+
+    background-color: #f5f7fd;
+    box-shadow: rgba(149, 157, 165, 0.60) 2px 8px 16px;
+}
+
+
+
+.card-produto-carrinho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 95%;
+    height: 12vh;
+
+    margin: 5% 0 0% 0;
+
+    cursor: pointer;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    box-shadow: rgba(149, 157, 165, 0.30) 2px 8px 8px;
+
+}
+
+.card-produto-body-carrinho {
+    display: flex;
+    flex-direction: row;
+
+
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 12vh;
+
+    padding: 2%;
+}
+
+#produtosCarrinho{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    align-items:center;
+
+    width: 100%;
+    height: 80%;
+
+    padding-bottom: 1%;
+    overflow:auto; 
+
+
+}
+
+
+
+#descricoesProduto-carrinho{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    align-items: flex-start;
+
+    width: 70%;
+    height: 100%;
+
+    
+}
+
+#itemTitulo-carrinho{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+
+    font-size: 0.7rem;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    height: 30%;
+    font-weight: 500;
+    width: 100%;    
+}
+
+#itemDescricao-carrinho{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    
+    width: 100%;
+    height: 60%;
+    font-size: 0.6rem;
+    font-weight: 100;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    text-align: start;
+    
+    padding-right: 1%;
+}
+
+#itemPreco-carrinho{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    text-align: start;
+    
+    font-size: 0.8rem;
+    font-weight: bolder;
+    height: 30%;
+
+    color: rgb(16, 151, 16);
+}
+
+
+#itemQuantidade-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    font-size: 0.6rem;
+    padding: 0 5% 0 5%;
+    width: 60%;
+    height: 20%;
+
+    background-color: #3A7CF5;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+#imageProduto-carrinho{
+    width: 30%;
+    height: 100%;
+}
+
+
+
+#itemIcone-carrinho{
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+
+    border-radius: 8px;
+
+}
+
+#topVerCarrinho{
+    margin-bottom: 0%;
+    width: 100%;
+    height: 5%;
+}
+
+#fecharModalCarrinho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    z-index: 2;
+
+    width: 8%;
+    height: 4%;
+}
+
+#total-carrinho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #18DA18;
+    width: 100%;
+
+    height: 8%;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    padding: 0% 5% 0 5%;
+
+    cursor: pointer;
+}
+
+#total-carrinho-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+#total{
+    font-weight: 500;
+    margin-left: 1%;
+}
+
+#icon-seta-carrinho{
+    object-fit: contain;
+    height: 100%;
+    width: 10%;
+
+}
+
+#carrinhoVazio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    width: 100%;
+
+}
+
+#itensCarrinhoTitulo{
+    font-size: 1.2rem;
+}
+
+
+/* -------------------------------------------- FINALIZAR PEDIDO -------------------------------------------- */
+#finalizarPedido-container{
+    position: fixed;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 352px;
+
+    height: 85vh;
+    
+    top: 11vh;
+
+    display: none;
+
+    padding: 1%;
+    z-index: 3;
+}
+
+
+
+#finalizarPedido-body{
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 20px;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 5%;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
+    background-color: hsl(225,100%,98.43%);
+
+}
+
+
+#totalPedido{
+    font-weight: 600;
+}
+
+#FinalizarPedido-corpo1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+    width: 98%;
+    height: 80%;
+
+    overflow:auto; 
+    
+}
+
+
+
+#finalizarPedido-corpo2{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    height: 15%;
+
+}
+
+#finalizarPedido-corpo2 div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 70%;
+}
+
+
+#finalizarPedido-corpo2 div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 30%;
+}
+
+
+#ver-carrinho-finalizarPedido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(24, 218, 24);
+
+    width: 80%;
+    height: 50%;
+    color: white;
+    font-size: 1rem;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+#Voltar-finalizarPedido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 3%;
+
+}
+
+#Voltar-finalizarPedido img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+
+#FinalizarPedido-corpo1 #resumoPedido{
+    margin-top: 0;
+}
+
+
+
+#resumoPedido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    padding: 5%;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+
+    height: auto;
+    margin-top: 5%;
+
+    box-shadow: rgba(149, 157, 165, 0.30) 0px 8px 24px 0px;
+
+    height: 15vh;
+}
+
+#resumoPedido p:nth-child(1){
+    font-size: 1rem;
+    font-weight: 700;
+
+    color: #3B59B2;
+}
+
+
+#resumoPedido p:nth-child(2){
+    color: #587EF2;
+    font-size: 0.8rem;
+
+}
+
+
+#resumoPedido p:nth-child(3){
+    font-size: 0.7rem;
+    color: grey;
+}
+
+#resumoPedido p:nth-child(4){
+    margin-top: 5%;
+    font-size: 1rem;
+
+    color: #3B59B2;
+}
+
+#opEntrega {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    background-color: none;
+    border-radius: 10px;
+
+    margin-top: 5%;
+    padding: 5%;
+
+    font-size: 0.7rem;
+
+    height: 6vh;
+
+}
+
+
+
+
+#opEntrega div:nth-child(1), #opEntrega div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 6vh;
+    width: 49%;
+    background-color: white;
+
+    box-shadow: rgba(149, 157, 165, 0.30) 0px 8px 8px;
+    border-radius: 5px;
+
+    border: 3px solid grey;
+
+}
+
+
+#endereco{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+
+    padding: 5%;
+    background-color: white;
+    border-radius: 10px;
+
+    margin: 5% 0 5% 0;
+    box-shadow: rgba(149, 157, 165, 0.30) 0px 8px 8px ;
+}
+
+#enderecoTop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+}
+
+#enderecoBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#enderecoBody div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 100%;
+}
+
+#enderecoBody div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 2%;
+
+    width: 100%;
+    height: 100%;
+    
+}
+
+#enderecoBody div p{
+    width: 30%;
+}
+
+
+#enderecoBody div input{
+    text-align: left;
+    padding-left: 2%;
+    border: 3px solid gray;
+
+    border-radius: 10px;
+
+
+}
+
+#cidade, #bairro, #rua{
+    background-color: black;    
+    background-color: #ceced0;
+}
+
+
+
+
+
+
+
+
+
+#DadosCliente{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+    
+    padding: 5%;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+
+    height: auto;
+    margin-top: 5%;
+
+    box-shadow: rgba(149, 157, 165, 0.30) 0px 8px 8px;
+
+}
+
+
+#DadosCliente p{
+    font-size: 1rem;
+    color: #4E5159;
+    color: rgb(51, 48, 48);
+
+    font-weight: 500;
+
+}
+
+
+#DadosCliente input{
+    width: 100%;
+    height: 30%;
+
+    border-radius: 10px;
+    border: 3px solid gray;
+
+    padding: 3% 1% 3% 5%;
+
+    font-size: 1rem;
+}
+
+#DadosCliente input:focus{
+    border: 3px solid #1b50ec;
+
+}
+
+#DadosCliente input{
+    outline: 0;
+
+}
+
+#formaDePagamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 15vh;
+
+    padding: 5%;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+
+    height: auto;
+    margin-top: 5%;
+
+    box-shadow: rgba(149, 157, 165, 0.30) 0px 8px 8px;
+
+}
+
+#formaDePagamento select option{
+    width: 100%;
+
+}
+
+
+#formaDePagamento p{
+    font-size: 1rem;
+    font-weight: 700;
+
+    color: #3B59B2;
+}
+
+#formaDePagamento select{
+    margin-top: 5%;
+    height: 50%;
+    width: 100%;
+
+    border: 3px solid gray;
+
+    border-radius: 10px;
+
+    padding: 2%;
+}
+
+#formaDePagamento select:focus{
+    border: 3px solid #1b50ec;
+
+}
+
+
+#formaDePagamento select option{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+
+#formaDePagamento select:focus{
+    border: 3px solid #1b50ec;
+
+}
+
+
+
+/* -------------------------------------------- PEDIDO FINALIADO -------------------------------------------- */
+
+#pedidoFinalidado{
+    position: fixed;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 352px;
+
+    height: 85vh;
+    
+    top: 10vh;
+
+    display: none;
+    overflow: hidden;
+
+
+
+    padding: 1%;
+    z-index: 2;
+
+}
+
+#pedidoFinalizadoBody{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    border-radius: 20px;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: white;
+    padding: 10%;
+
+    /* overflow: hidden; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
+    
+}
+
+#pedidoFinalizadoBody p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+#iconPedidoConcluido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: auto;
+}
+
+#iconPedidoConcluido img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+/* -------------------------------------------- MEDIA QUERY -------------------------------------------- */
+
+
+
+
+@media only screen and (min-width: 600px) {
+    
+    body{
+        overflow-x: hidden;
+    }
+
+    /* width of the entire scrollbar */
+    body::-webkit-scrollbar {
+        width: 2px;               
+        background-color: none;
+        
+    }
+
+      body::-webkit-scrollbar-thumb {
+          
+        background-color: #3A7CF5;    /* color of the scroll thumb */
+        border-radius: 20px;       /* roundness of the scroll thumb */
+
+
+    }
+
+    header{
+        display: flex;
+        position: fixed;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        
+        top: 0;
+        width: 100vw;
+        height: 10vh;
+    
+        background-color: #3a7cf5;
+        z-index: 5;
+        margin: 0 50px 0 px;
+        padding: 0 10px 0 10px;
+    
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;    
+        border-radius: 0 0 25px 25px;
+    
+    }
+
+
+    #container {
+      
+        width: 80%;
+    }
+
+    #murais #slide{
+        margin-top: 3vh;
+        height: 30vh;
+    }
+
+
+    
+    #ver-carrinho{
+
+        width: 50%;
+    }
+
+    #right-menu-body{
+        width: 30%;
+
+    
+    }
+
+
+    #bolos-mural, #salgados-mural, #bebidas-mural{
+
+        width: 100%;
+        height: 20vh;
+        background-color: grey;
+        margin: 10px 10px 0;
+    
+        border-radius: 10px;
+    
+    }
+
+
+    #imageProduto{
+        width: 20%;
+        height: 100%;
+    }
+
+
+
+    .container-modal-menu-lateral{
+
+        
+        width: 100%;
+    
+        height: 100vh;
+        
+    
+        top: 5vh;
+        
+        overflow: hidden;
+    
+        border-radius: 20px;
+        padding: 1%;
+        z-index: 2;
+    
+        padding: 8%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
+    
+    }
+
+
+    #body-modal-menu-lateral{
+
+        width: 40%;
+    
+        height: 100%;
+        
+    
+
+    
+        padding: 8%;
+    }
+
+    
+    .card-produto{
+        display: flex;
+        align-items: center;
+        justify-content: stretch;
+    
+        width: 100%;
+        height: 20vh;
+    
+        margin: 3% 0 3% 0;
+    
+        cursor: pointer;
+    }
+
+ 
+    
+    #body-bebidas{
+        padding-bottom: 10vh;
+
+    }
+}

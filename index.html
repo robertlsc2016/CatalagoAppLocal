@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="/public/css/style.css">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Catálago App</title>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="right-menu">
+            <div id="right-menu-body">
+
+                <div id="ver-carrinho-meuDireito">
+                    <a onclick="verCarrinho()">Ver Carrinho</a>
+                </div>
+
+                <a onclick="modalInfoEEndereco()">Informações e Endereço </a>
+                <a onclick="modalHorarioAtendimento()">Horário de Atendimento</a>
+                <a onclick="modalLigarEmpresa()">Ligar para a Empresa</a>
+                <a onclick="modalEnviarMensagem()">Enviar Mensagem</a>
+            </div>
+        </div>
+
+
+        <div class="container-modal-menu-lateral" id="infoEEndereco">
+
+            <div id="body-modal-menu-lateral" >
+
+                <div id="top-modal" >
+                    <img src="/imgs/icons/icones-menu-lateral-direto/variante-de-marcador-preto.png" alt="">
+                    <h2 >Informações e Endereço </h2>
+                </div>
+
+                <hr style="width: 30%; border: 2px solid #557CF2; border-radius: 50px; background-color: #557CF2;"
+                    >
+
+                <div id="body-modal">
+                    <div>
+                        <iframe  id='mapa-localização'
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d960.4646437363875!2d-56.028457170815!3d-15.652517707950262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939daf7eff08206f%3A0x72886a8c3836b6aa!2sR.%20Karaja%2C%203%20-%20Res.%20Coxipo%2C%20Cuiab%C3%A1%20-%20MT%2C%2078090-432!5e0!3m2!1spt-BR!2sbr!4v1640129078155!5m2!1spt-BR!2sbr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <div>
+                        <p>Rua Karajá, 02</p>
+                        <p>Itapajé</p>
+                        <p>Cuiabá - MT</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div> 
+
+        <div class="container-modal-menu-lateral" id="horarioAtendimento">
+
+            <div id="body-modal-menu-lateral" >
+
+                <div id="top-modal" >
+                    <img src="/imgs/icons/icones-menu-lateral-direto/relogio.png" alt="">
+                    <h2 >Horário de Atendimento </h2>
+                </div>
+
+                <hr style="width: 30%; border: 2px solid #557CF2; border-radius: 50px; background-color: #557CF2;"
+                    >
+
+                <div id="body-modal">
+                    <div>
+                        <p>Segunda à Sexta:</p>
+                        <p>8h às 18h</p>
+                        <br>
+
+                        <p>Sábado:</p>
+                        <p>8h às 16h</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div> 
+
+        <div class="container-modal-menu-lateral" id="ligarEmpresa">
+
+            <div id="body-modal-menu-lateral" >
+
+                <div id="top-modal" >
+                    <img src="/imgs/icons/icones-menu-lateral-direto/simbolo-auricular-do-telefone.png" alt="">
+                    <h2 >Ligar para a Empresa </h2>
+                </div>
+
+                <hr style="width: 30%; border: 2px solid #557CF2; border-radius: 50px; background-color: #557CF2;" >
+
+                <div id="body-modal">
+
+                    <div>
+                        <a href="tel:65996060121">(65) 9 9 9606-0121</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div> 
+
+        <div class="container-modal-menu-lateral" id="enviarMensagem">
+
+            <div id="body-modal-menu-lateral" >
+
+                <div id="top-modal" >
+                    <img src="/imgs/icons/icones-menu-lateral-direto/whatsapp.png" alt="">
+                    <h2 >Enviar Mensagem WhatsApp</h2>
+                </div>
+
+                <hr style="width: 30%; border: 2px solid #557CF2; border-radius: 50px; background-color: #557CF2;" >
+
+                <div id="body-modal">
+                    
+                    <div>
+                        <a href="https://api.whatsapp.com/send?phone=5565996060121&text=Oi%2C%20quero%20ajuda%20com%20um%20pedido" target="_blank">(65) 9 9 9606-0121</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div> 
+
+
+
+        
+        <div id="pedidoFinalidado">
+            <div id="pedidoFinalizadoBody">
+                <div id="iconPedidoConcluido">
+                    <img src="/imgs/icons/verifica.png" alt="">
+                </div>
+                <p><b>Pedido Realizado</b> Com <b>Sucesso</b>!</p>
+
+            </div>
+        </div>
+
+        <div id="modal-container">
+
+            <div id="modal-container-body">
+
+                <div id="fecharModal" onclick="fecharModal()">
+                    <img src="/imgs/icons/fechar.png" alt="" id="fecharModal-body">
+                </div>
+
+                <div id="corpoModaCarrinho">
+
+                    <div id="modalBody">
+
+                        <div id="modalImage">
+                            <img src="" alt="" id="modalImageBody">
+                        </div>
+
+                        <p id="modalTitulo"></p>
+
+                        <p id="modalDescricao"></p>
+
+                        <p id="modalPreco"></p>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div id="adicionais">
+
+                    <div id="adicionaisBody">
+
+                    </div>
+
+                </div>
+
+
+                <div id="botaoAddCarrinho">
+
+                    <select id="quantidadeItem" onchange="atuQuantidade()">
+
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+
+                    </select>
+
+                    <div id="adicionarCarrinho" onclick="adicionarAoCarrinho()">
+                        <p>Adicionar Ao Carrinho</p>
+                        <span id="subtotal"></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="ver-carrinho-container">
+
+            <div id="fecharModalCarrinho" onclick="fecharCarrinho()">
+                <img src="/imgs/icons/fechar.png" alt="" id="fecharModal-body" onclick="fecharCarrinho()">
+            </div>
+
+            <div id="ver-carrinho-body">
+                <div id="topVerCarrinho">
+                    <p id="itensCarrinhoTitulo">Itens Carrinho</p>
+
+                    <hr style="width: 10%; border: 2px solid #557CF2; border-radius: 50px; background-color: #557CF2;">
+
+                </div>
+
+
+
+                <div id="produtosCarrinho">
+
+                </div>
+
+                <div id="total-carrinho">
+                    <div id="total-carrinho-body" onclick="finalizarCarrinho()">
+                        <p>Total:</p>
+                        <p id="total"> </p>
+                    </div>
+
+                    <img src="/imgs/icons/seta-direita.png" alt="" id="icon-seta-carrinho">
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div onclick="verCarrinho()" id="ver-carrinho">
+            <p>Ver carrinho </p>
+            <p id="totalCarrinhoAtual">R$ 00.00 - (0)</p>
+        </div>
+
+        <div id="finalizarPedido-container">
+
+            <div id="finalizarPedido-body">
+
+                <div id="FinalizarPedido-corpo1">
+
+                    <div id="resumoPedido">
+                        <p>Resumo do pedido</p>
+                        <p>Valor Total do Pedido: <span id="subtotalPedido"></span></p>
+                        <p id="taxaDeEntrega">Taxa de entrega: R$ 5,00</p>
+                        <p id="totalPedido">Total: </p>
+                    </div>
+
+                    <div id="DadosCliente">
+                        <p>Nome:</p>
+                        <input type="text" name="" id="nomeCliente" placeholder="Seu nome..." pattern="[a-z\s]+$"
+                            value="">
+                        <p>Número de WhatsApp:</p>
+                        <input type="text" name="" id="numeroTelefoneCliente" placeholder="(XX) X XXXX - XXXX" value=""
+                            maxlength="16">
+                    </div>
+
+
+
+                    <div id="formaDePagamento">
+                        <p>Pagamento</p>
+                        <hr
+                            style="width: 10%; border: 2px solid #557CF2; border-radius: 50px; background-color: #557CF2;">
+
+                        <select name="" id="opsDePagamento">
+
+                            <option value="dinheiro">Dinheiro</option>
+                            <option value="cartaoDeCredito">Cartão</option>
+                            <option value="pix">Pix</option>
+                            <option value="applePay">Apple Pay</option>
+                            <option value="pagamentoCorporativo">Pagamento Corporativo</option>
+                        </select>
+                    </div>
+
+
+                    <div id="opEntrega">
+
+                        <div>
+                            <span>Receber em Casa</span>
+                            <input type="radio" value="receberEmCasa" name="selecFormaDeEntrega" id="OPreceberEmCasa">
+
+                        </div>
+
+                        <div>
+                            <span>Retirar no Local</span>
+                            <input type="radio" value="retirarNoLocal" name="selecFormaDeEntrega" id="OPretirarNoLocal">
+                        </div>
+
+                    </div>
+
+                    <div id="endereco">
+
+                        <div id="enderecoTop">
+                            <p>Endereço:</p>
+                            <hr
+                                style="width: 10%; border: 2px solid #557CF2; border-radius: 50px; background-color: #557CF2;">
+
+                        </div>
+
+                        <div id="enderecoBody">
+
+                            <div>
+                                <p id="cepText">CEP:</p>
+                                <input type="text" id="cep" placeholder="78000-000">
+                            </div>
+
+                            <div>
+                                <p id="cidadeText">Cidade</p>
+                                <input type="text" name="" id="cidade" disabled>
+                            </div>
+
+                            <div>
+                                <p id="bairroText">Bairro</p>
+                                <input type="text" name="" id="bairro" disabled>
+                            </div>
+
+                            <div>
+                                <p id="ruaText">Rua</p>
+                                <input type="text" id="rua" disabled>
+                            </div>
+
+                            <div>
+
+                                <p id="numeroText">Número</p>
+                                <input type="number" id="numero">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="finalizarPedido-corpo2">
+                    <div>
+                        <div onclick="fecharCompra()" id="ver-carrinho-finalizarPedido">
+                            <p>Finalizar Pedido <span id="totalFinalizarPeiddo"></span> </p>
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <div id="Voltar-finalizarPedido" onclick="voltarVerCarrinho()">
+                            <img src="/imgs/icons/seta-esquerda.png" alt="">
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <header id="header">
+            <div id="logo-body">
+
+                <a href="">
+                    <img src="/imgs/icons/umbler-logo-png.png" alt="">
+
+
+                </a>
+            </div>
+
+            <h1> <a href="" id="titulo-site">Sandra's Cakes</a> </h1>
+
+            <div id="menu-abrir">
+                <img src="/imgs/icons/botao-de-menu-white.png" alt="">
+            </div>
+
+        </header>
+
+        <corpo id="corpo">
+
+            <div id="murais">
+
+                <div id="slide">
+
+                    <div class="your-class">
+
+                        <div onclick="exibirProdutoSelecionado(1)">
+                            <img src="https://apiprodutosutalk.herokuapp.com/images/bg1.jpg" alt="">
+                        </div>
+
+                        <div>
+                            <img src="https://apiprodutosutalk.herokuapp.com/images/produtos/1.jpg" alt="">
+                            <div id="infosMurais">
+                                <p id="tituloMural">Bolo de cenoura c/ chocolate</p>
+
+                                <p id="PrecoMural">R$ 29.99</p>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <img src="https://apiprodutosutalk.herokuapp.com/images/produtos/4.jpg" alt="">
+                            <div id="infosMurais">
+                                <p id="tituloMural">Pizza de frango
+                                </p>
+
+                                <p id="PrecoMural">R$ 29.90
+                                </p>
+                            </div>
+
+                        </div>
+                        <div>
+                            <img src="https://apiprodutosutalk.herokuapp.com/images/produtos/7.jpg" alt="">
+                            <div id="infosMurais">
+                                <p id="tituloMural">Coca-Cola Lata
+
+                                </p>
+
+                                <p id="PrecoMural">R$ 5.00
+
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div id="bolos-mural">
+
+                    <a href="#bolos">
+                        <img src="./imgs/murais/bolos.jpg" alt="">
+                        <p>Bolos</p>
+                    </a>
+                </div>
+
+                <div id="salgados-mural">
+                    <a href="#salgados">
+                        <img src="./imgs/murais/pizza.jpg" alt="">
+                        <p>Pizza</p>
+                    </a>
+                </div>
+
+                <div id="bebidas-mural">
+                    <a href="#bebidas">
+                        <img src="./imgs/murais/refrigerantes.jpg" alt="">
+                        <p>Bebidas</p>
+
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="bolos">
+
+                <div id="head-bolos">
+                    <h2 href="">Bolos</h2>
+                    <hr style="width: 10%; border: 2px solid #557CF2; border-radius: 50px; background-color: #557CF2;">
+                </div>
+
+                <div id="body-bolos">
+
+                </div>
+            </div>
+
+            <div id="salgados">
+
+                <div id="head-salgados">
+                    <h2 href="">Pizzas</h2>
+                    <hr style="width: 10%; border: 2px solid #557CF2; border-radius: 50px; background-color: #557CF2;">
+                </div>
+
+                <div id="body-salgados">
+
+                </div>
+
+            </div>
+
+            <div id="bebidas">
+
+                <div id="head-bebidas">
+                    <h2 href="">Bedidas</h2>
+                    <hr style="width: 10%; border: 2px solid #557CF2; border-radius: 50px; background-color: #557CF2;">
+                </div>
+
+                <div id="body-bebidas">
+
+
+                </div>
+            </div>
+
+        </corpo>
+
+
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/slick-1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.11.2/jquery.mask.js"
+        integrity="sha512-bwanfE29Vxh7VGuxx44U2WkSG9944fjpYRTC3GDUjh0UJ5FOdCQxMJgKWBnlxP5hHKpFJKmawufWEyr5pvwYVA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css" />
+
+    <script src="/src/main.js"></script>
+
+
+    <script src="/src/slide.js"></script>
+
+    <script src="/src/produtos.js"></script>
+
+    <script src="/src/right-menu.js"></script>
+</body>
+
+</html>
