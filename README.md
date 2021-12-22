@@ -14,8 +14,8 @@
 ### 3 - Na pasta raiz, execute o comando npm start para executar a aplicação
 <code>npm start</code>
 
-### 4 - Para visualizar, basta acessar no navegador, localhost na porta 3000
-<code>http://localhost:3000/</code>
+### 4 - Para visualizar, basta acessar no navegador, localhost na porta 3366 ou na porta fornecida no terminal quando você rodar o comando npm start
+<code>http://localhost:3366/</code>
 
 ## OBSERVAÇÕES
 
